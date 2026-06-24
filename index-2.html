@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JEDPA 2026 - Voleibol Categoría B</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #198754);
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            border-left: 6px solid #0d6efd;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card-hover {
+            transition: .3s;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: white;
+        }
+
+        .serie-a .accordion-button:not(.collapsed) {
+            background: #0d6efd;
+        }
+
+        .serie-b .accordion-button:not(.collapsed) {
+            background: #198754;
+        }
+
+        .serie-c .accordion-button:not(.collapsed) {
+            background: #dc3545;
+        }
+
+        .serie-d .accordion-button:not(.collapsed) {
+            background: #fd7e14;
+        }
+
+        .serie-e .accordion-button:not(.collapsed) {
+            background: #6f42c1;
+        }
+
+        .serie-f .accordion-button:not(.collapsed) {
+            background: #20c997;
+        }
+
+        .serie-g .accordion-button:not(.collapsed) {
+            background: #6610f2;
+        }
+
+        .serie-h .accordion-button:not(.collapsed) {
+            background: #0dcaf0;
+        }
+
+        .serie-i .accordion-button:not(.collapsed) {
+            background: #ffc107;
+            color: black;
+        }
+
+        .serie-j .accordion-button:not(.collapsed) {
+            background: #6c757d;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 30px;
+        }
+
+        .table th {
+            background: #0d6efd;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                🏐 JEDPA 2026
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#general">Información</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#series">Series</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cronograma">Cronograma</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sedes">Sedes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section id="inicio" class="hero text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">
+                Programación de los Juegos Escolares Deportivos y Paradeportivos 2026
+            </h1>
+
+            <h3>Disciplina de Voleibol - Categoría "B"</h3>
+
+            <p class="lead mt-3">
+                UGEL Cusco - Etapa UGEL Cusco
+            </p>
+        </div>
+    </section>
+
+    <!-- INFO GENERAL -->
+
+    <section id="general" class="container py-5">
+
+        <h2 class="section-title">Información General del Campeonato</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card shadow-sm card-hover h-100">
+                    <div class="card-body text-center">
+                        <h1>10</h1>
+                        <p>Series participantes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow-sm card-hover h-100">
+                    <div class="card-body text-center">
+                        <h1>38</h1>
+                        <p>Instituciones Educativas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow-sm card-hover h-100">
+                    <div class="card-body text-center">
+                        <h1>3</h1>
+                        <p>Jornadas de competencia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow-sm card-hover h-100">
+                    <div class="card-body text-center">
+                        <h1>3</h1>
+                        <p>Sedes deportivas</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERIES -->
+
+    <section id="series" class="container py-5">
+
+        <h2 class="section-title">Series Participantes</h2>
+
+        <div class="accordion" id="accordionSeries">
+
+            <!-- SERIE A -->
+            <div class="accordion-item serie-a">
+                <h2 class="accordion-header" id="headingA">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a"
+                        aria-expanded="true" aria-controls="a">
+                        Serie A
+                    </button>
+                </h2>
+                <div id="a" class="accordion-collapse collapse show" aria-labelledby="headingA"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>San Gabriel</li>
+                            <li>Abraham Lincoln</li>
+                            <li>Jesús es Mi Maestro</li>
+                            <li>Sta. María de los Ángeles</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERIE B -->
+            <div class="accordion-item serie-b">
+                <h2 class="accordion-header" id="headingB">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#b" aria-expanded="false" aria-controls="b">
+                        Serie B
+                    </button>
+                </h2>
+                <div id="b" class="accordion-collapse collapse" aria-labelledby="headingB"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Clorinda Matto de Turner</li>
+                            <li>Humberto Luna</li>
+                            <li>José Pardo</li>
+                            <li>Simón Bolívar</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERIE C -->
+            <div class="accordion-item serie-c">
+                <h2 class="accordion-header" id="headingC">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#c" aria-expanded="false" aria-controls="c">
+                        Serie C
+                    </button>
+                </h2>
+                <div id="c" class="accordion-collapse collapse" aria-labelledby="headingC"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>María de la Merced</li>
+                            <li>ISP Santa Rosa</li>
+                            <li>Ntra. Sra. de Fátima</li>
+                            <li>Raimondi Cusco</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERIE D -->
+            <div class="accordion-item serie-d">
+                <h2 class="accordion-header" id="headingD">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#d" aria-expanded="false" aria-controls="d">
+                        Serie D
+                    </button>
+                </h2>
+                <div id="d" class="accordion-collapse collapse" aria-labelledby="headingD"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Educandas</li>
+                            <li>Rosario</li>
+                            <li>F y A 21 San Jerónimo</li>
+                            <li>María Auxiliadora</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERIE E -->
+            <div class="accordion-item serie-e">
+                <h2 class="accordion-header" id="headingE">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#e" aria-expanded="false" aria-controls="e">
+                        Serie E
+                    </button>
+                </h2>
+                <div id="e" class="accordion-collapse collapse" aria-labelledby="headingE"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Santa Ana</li>
+                            <li>Miguel Grau Seminario</li>
+                            <li>Arturo Palomino R.</li>
+                            <li>Viva el Perú</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERIE F -->
+            <div class="accordion-item serie-f">
+                <h2 class="accordion-header" id="headingF">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#f" aria-expanded="false" aria-controls="f">
+                        Serie F
+                    </button>
+                </h2>
+                <div id="f" class="accordion-collapse collapse" aria-labelledby="headingF"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Sagrado Corazón</li>
+                            <li>Jorge Chávez Chaparro</li>
+                            <li>Pucllasunchis</li>
+                            <li>Uriel García</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERIE G -->
+            <div class="accordion-item serie-g">
+                <h2 class="accordion-header" id="headingG">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#g" aria-expanded="false" aria-controls="g">
+                        Serie G
+                    </button>
+                </h2>
+                <div id="g" class="accordion-collapse collapse" aria-labelledby="headingG"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Andrés Avelino Cáceres</li>
+                            <li>Beltrand Russell</li>
+                            <li>Gal School</li>
+                            <li>San José</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERIE H -->
+            <div class="accordion-item serie-h">
+                <h2 class="accordion-header" id="headingH">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#h" aria-expanded="false" aria-controls="h">
+                        Serie H
+                    </button>
+                </h2>
+                <div id="h" class="accordion-collapse collapse" aria-labelledby="headingH"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Luis Vallejo Santoni</li>
+                            <li>Víctor Raúl Haya de la Torre</li>
+                            <li>F y A 20 de Stgo</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERIE I -->
+            <div class="accordion-item serie-i">
+                <h2 class="accordion-header" id="headingI">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#i" aria-expanded="false" aria-controls="i">
+                        Serie I
+                    </button>
+                </h2>
+                <div id="i" class="accordion-collapse collapse" aria-labelledby="headingI"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Domingo Savio</li>
+                            <li>Bolivariano</li>
+                            <li>José Andrés Rázuri</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERIE J -->
+            <div class="accordion-item serie-j">
+                <h2 class="accordion-header" id="headingJ">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#j" aria-expanded="false" aria-controls="j">
+                        Serie J
+                    </button>
+                </h2>
+                <div id="j" class="accordion-collapse collapse" aria-labelledby="headingJ"
+                    data-bs-parent="#accordionSeries">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Comercio 41</li>
+                            <li>Juan Landázuri</li>
+                            <li>El Carmelo</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SEDES -->
+
+    <section id="sedes" class="container py-5">
+
+        <h2 class="section-title">Sedes Oficiales</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5>Polideportivo Clorinda Matto de Turner</h5>
+                        <p>
+                            Sede oficial de las Series A, B y C.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5>Coliseo I.E. Uriel García</h5>
+                        <p>
+                            Sede oficial de las Series D, E y F.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5>Coliseo I.E. Diego Quispe Tito</h5>
+                        <p>
+                            Sede oficial de las Series G, H, I y J.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CRONOGRAMA -->
+    <section id="programacion" class="container py-4">
+        <h2 class="section-title">Programación Integrada</h2>
+
+        <ul class="nav nav-pills mb-3">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#f1">25
+                    Junio</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#f2">26 Junio</button>
+            </li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#f3">30 Junio</button>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="f1">
+                <table class="table table-bordered">
+
+                    <thead class="table-light">
+                        <tr>
+                            <th>Hora</th>
+                            <th>Equipo 1</th>
+                            <th>vs</th>
+                            <th>Equipo 2</th>
+                            <th>Serie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-secondary">
+                            <td colspan="6" class="text-start ps-3 fw-bold">Sede: Polideportivo
+                                Clorinda Matto</td>
+                        </tr>
+                        <tr>
+                            <td>8:30 am</td>
+                            <td>San Gabriel</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Abraham Lincoln</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 am</td>
+                            <td>Jesús es mi Maestro</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Sta María de los Ángeles</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 am</td>
+                            <td>Humberto Luna</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Clorinda Matto de Turner</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 am</td>
+                            <td>José Pardo</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Simón Bolívar</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>11:50 am</td>
+                            <td>María de la Merced</td>
+                            <td class="fw-bold">vs</td>
+                            <td>ISP. Santa Rosa</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>12:40 pm</td>
+                            <td>Ntra. Sra. de Fátima</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Raimondi Cusco</td>
+                            <td>C</td>
+                        </tr>
+
+                        <tr class="table-secondary">
+                            <td colspan="6" class="text-start ps-3 fw-bold">Sede: Coliseo de la I.E.
+                                Uriel García</td>
+                        </tr>
+                        <tr>
+                            <td>8:30 am</td>
+                            <td>Educandas</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Rosario</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 am</td>
+                            <td>Fe y Alegría 21 San Jerónimo</td>
+                            <td class="fw-bold">vs</td>
+                            <td>María Auxiliadora</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 am</td>
+                            <td>Santa Ana</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Miguel Grau Seminario</td>
+                            <td>E</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 am</td>
+                            <td>Arturo Palomino R.</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Viva el Perú</td>
+                            <td>E</td>
+                        </tr>
+                        <tr>
+                            <td>11:50 am</td>
+                            <td>Sagrado Corazón</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Jorge Chávez Chaparro</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>12:40 pm</td>
+                            <td>Pucllasunchis</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Uriel García</td>
+                            <td>F</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td colspan="6" class="text-start ps-3 fw-bold">Sede: Coliseo de la I.E.
+                                Diego Quispe Ttito</td>
+                        </tr>
+                        <tr>
+                            <td>8:30 am</td>
+                            <td>Andrés Avelino Cáceres</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Beltrand Rusbel</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 am</td>
+                            <td>Gall School</td>
+                            <td class="fw-bold">vs</td>
+                            <td>San José</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 am</td>
+                            <td>Víctor Raúl Haya DLT</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Fe y Alegría 20 de Stgo</td>
+                            <td>H</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 am</td>
+                            <td>Bolivariano</td>
+                            <td class="fw-bold">vs</td>
+                            <td>José Andrés Rázuri</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>11:50 am</td>
+                            <td>Juan Landázuri</td>
+                            <td class="fw-bold">vs</td>
+                            <td>El Carmelo</td>
+                            <td>J</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade" id="f2">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Hora</th>
+                            <th>Equipo 1</th>
+                            <th>vs</th>
+                            <th>Equipo 2</th>
+                            <th>Serie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-secondary">
+                            <td colspan="6" class="text-start ps-3 fw-bold">Sede: Polideportivo
+                                Clorinda
+                                Matto</td>
+                        </tr>
+                        <tr>
+                            <td>8:30 am</td>
+                            <td>San Gabriel</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Jesús es mi Maestro</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 am</td>
+                            <td>Abraham Lincoln</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Sta María de los Ángeles</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 am</td>
+                            <td>José Pardo</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Clorinda Matto de Turner</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 am</td>
+                            <td>Humberto Luna</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Simón Bolívar</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>11:50 am</td>
+                            <td>María de la Merced</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Ntra. Sra. de Fátima</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>12:40 pm</td>
+                            <td>ISP. Santa Rosa</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Raimondi Cusco</td>
+                            <td>C</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td colspan="6" class="text-start ps-3 fw-bold">Sede: Coliseo de la I.E.
+                                Uriel García</td>
+                        </tr>
+                        <tr>
+                            <td>8:30 am</td>
+                            <td>Educandas</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Fe y Alegría 21 San Jerónimo</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 am</td>
+                            <td>Rosario</td>
+                            <td class="fw-bold">vs</td>
+                            <td>María Auxiliadora</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 am</td>
+                            <td>Santa Ana</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Arturo Palomino R.</td>
+                            <td>E</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 am</td>
+                            <td>Miguel Grau Seminario</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Viva el Perú</td>
+                            <td>E</td>
+                        </tr>
+                        <tr>
+                            <td>11:50 am</td>
+                            <td>Sagrado Corazón</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Pucllasunchis</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>12:40 pm</td>
+                            <td>Jorge Chávez Chaparro</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Uriel García</td>
+                            <td>F</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td colspan="6" class="text-start ps-3 fw-bold">Sede: Coliseo de la I.E.
+                                Diego Quispe Ttito</td>
+                        </tr>
+                        <tr>
+                            <td>8:30 am</td>
+                            <td>Andrés Avelino Cáceres</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Gall School</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 am</td>
+                            <td>Beltrand Rusbel</td>
+                            <td class="fw-bold">vs</td>
+                            <td>San José</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 am</td>
+                            <td>Luis Vallejo Santoni</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Fe y Alegría 20 de Stgo</td>
+                            <td>H</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 am</td>
+                            <td>Domingo Savio</td>
+                            <td class="fw-bold">vs</td>
+                            <td>José Andrés Rázuri</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>11:50 am</td>
+                            <td>Comercio 41</td>
+                            <td class="fw-bold">vs</td>
+                            <td>El Carmelo</td>
+                            <td>J</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade" id="f3">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Hora</th>
+                            <th>Equipo 1</th>
+                            <th>vs</th>
+                            <th>Equipo 2</th>
+                            <th>Serie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-secondary">
+                            <td colspan="6" class="text-start ps-3 fw-bold">Sede: Polideportivo
+                                Clorinda
+                                Matto</td>
+                        </tr>
+                        <tr>
+                            <td>8:30 am</td>
+                            <td>San Gabriel</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Sta María de los Ángeles</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 am</td>
+                            <td>Jesús es mi Maestro</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Abraham Lincoln</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 am</td>
+                            <td>Simón Bolívar</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Clorinda Matto de Turner</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 am</td>
+                            <td>Humberto Luna</td>
+                            <td class="fw-bold">vs</td>
+                            <td>José Pardo</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>11:50 am</td>
+                            <td>María de la Merced</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Raimondi Cusco</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>12:40 pm</td>
+                            <td>Ntra. Sra. de Fátima</td>
+                            <td class="fw-bold">vs</td>
+                            <td>ISP. Santa Rosa</td>
+                            <td>C</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td colspan="6" class="text-start ps-3 fw-bold">Sede: Coliseo de la I.E.
+                                Uriel García</td>
+                        </tr>
+                        <tr>
+                            <td>8:30 am</td>
+                            <td>Educandas</td>
+                            <td class="fw-bold">vs</td>
+                            <td>María Auxiliadora</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 am</td>
+                            <td>Fe y Alegría 21 San Jerónimo</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Rosario</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 am</td>
+                            <td>Santa Ana</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Viva el Perú</td>
+                            <td>E</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 am</td>
+                            <td>Arturo Palomino R.</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Miguel Grau Seminario</td>
+                            <td>E</td>
+                        </tr>
+                        <tr>
+                            <td>11:50 am</td>
+                            <td>Sagrado Corazón</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Uriel García</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>12:40 pm</td>
+                            <td>Pucllasunchis</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Jorge Chávez Chaparro</td>
+                            <td>F</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td colspan="6" class="text-start ps-3 fw-bold">Sede: Coliseo de la I.E.
+                                Diego Quispe Ttito</td>
+                        </tr>
+                        <tr>
+                            <td>8:30 am</td>
+                            <td>Andrés Avelino Cáceres</td>
+                            <td class="fw-bold">vs</td>
+                            <td>San José</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 am</td>
+                            <td>Gall School</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Beltrand Rusbel</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 am</td>
+                            <td>Víctor Raúl Haya DLT</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Luis Vallejo Santoni</td>
+                            <td>H</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 am</td>
+                            <td>Bolivariano</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Domingo Savio</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>11:50 am</td>
+                            <td>Juan Landázuri</td>
+                            <td class="fw-bold">vs</td>
+                            <td>Comercio 41</td>
+                            <td>J</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p class="text-muted">
+            La Comisión Organizadora
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
